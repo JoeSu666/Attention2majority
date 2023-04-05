@@ -16,8 +16,8 @@ class samplegen():
         self.dirname = dirname
     def __call__(self):
         with h5py.File(self.dirname, 'r') as f:
-            for i in range(f['norm_bag'].shape[0]):
-                yield f['norm_bag'][i], f['label']
+            for i in range(f['bag'].shape[0]):
+                yield f['bag'][i], f['label']
 
 
         
