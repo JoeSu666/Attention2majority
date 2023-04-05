@@ -1,5 +1,7 @@
 # Attention2majority
-This is the official implementation of the Attention2majority code on Camelyon16 dataset. Data are patch feature vectors saved in .h5 files.
+This is the official implementation of the Attention2majority code on Camelyon16 dataset. 
+
+Each WSI need to be patchify and save in .h5 files. Each .h5 file has two datasets: "bag" and "label", where "bag" contains a matrix in Nx224x224x3, and "label" contains the label value of the WSI.
 
 # intelligent sampling
 ```$ python discriminator.py```
